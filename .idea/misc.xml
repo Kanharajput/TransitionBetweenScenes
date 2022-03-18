@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/AndroidStudioProjects/AutoAnimateLayoutUpdates/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AutoAnimateLayoutUpdates/app/src/main/res/layout/a_scene.xml" value="0.33" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AutoAnimateLayoutUpdates/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AutoAnimateLayoutUpdates/app/src/main/res/layout/another_scene.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>
