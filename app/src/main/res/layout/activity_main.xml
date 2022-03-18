@@ -9,7 +9,7 @@
         android:id="@+id/title"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:paddingHorizontal="150sp"
+        android:paddingHorizontal="130dp"
         android:textSize="50sp"
         android:text="Title" />
 
@@ -19,5 +19,15 @@
         android:layout_width="wrap_content">
         <include layout="@layout/a_scene" />
     </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeScene"
+        android:layout_marginHorizontal="130dp"
+        android:backgroundTint="#c7a4ac"
+        android:textColor="#198c19"
+        android:text="Change" />
 
 </LinearLayout>

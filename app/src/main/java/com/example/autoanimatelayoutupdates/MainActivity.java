@@ -3,13 +3,16 @@ package com.example.autoanimatelayoutupdates;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.Handler;
+import android.transition.AutoTransition;
+import android.transition.ChangeBounds;
+import android.transition.Fade;
 import android.transition.Scene;
+import android.transition.Transition;
+import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import com.google.android.material.transition.MaterialContainerTransform;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,5 +31,13 @@ public class MainActivity extends AppCompatActivity {
         // create the scenes
         aScene = Scene.getSceneForLayout(sceneRoot, R.layout.a_scene,this);
         anotherScene = Scene.getSceneForLayout(sceneRoot, R.layout.another_scene,this);
+    }
+
+    public void changeScene(View view) {
+        // these are the only two transitions that are provided by default because AutoTransition is choose one from these two.
+        Transition fadeTransition = new Fade();
+        Transition changeBound = new ChangeBounds();
+        Transition autoTransition = new AutoTransition();
+        TransitionManager.go(anotherScene, changeBound);
     }
 }
