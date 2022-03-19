@@ -9,8 +9,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
         android:layout_marginVertical="170dp"
-        android:text="Change Color"
-        android:textColor="#e188ff"
+        android:background="#bd33a4"
+        android:text="Change Background"
+        android:textColor="#9afc24"
         android:textSize="50dp"
         android:textStyle="bold|italic" />
 
