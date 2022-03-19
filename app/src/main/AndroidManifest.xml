@@ -10,15 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoAnimateLayoutUpdates">
         <activity
-            android:name=".SecondActivity"
+            android:name=".CustomTransitionActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".SecondActivity">
 
             <meta-data
                 android:name="android.support.PARENTACTIVITY"
-                android:value="com.example.autoanimatelayoutupdates.MainActivity"/>
-
+                android:value="com.example.autoanimatelayoutupdates.SecondActivity">
+            </meta-data>
         </activity>
+
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENTACTIVITY"
+                android:value="com.example.autoanimatelayoutupdates.MainActivity" />
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

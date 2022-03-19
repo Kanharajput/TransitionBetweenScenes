@@ -2,6 +2,7 @@ package com.example.autoanimatelayoutupdates;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Fade;
 import android.transition.TransitionManager;
@@ -45,5 +46,10 @@ public class SecondActivity extends AppCompatActivity {
         // Adding the new view to rootView
         rootView.addView(labelText);
 
+    }
+
+    public void openCustomTransitionActivity(View view) {
+        Intent intent = new Intent(this,CustomTransitionActivity.class);
+        startActivity(intent);
     }
 }

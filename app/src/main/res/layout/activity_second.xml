@@ -21,4 +21,16 @@
         android:layout_marginStart="190dp"
         android:layout_marginTop="113dp"
         android:text="Button" />
+
+    <Button
+        android:id="@+id/openCustomActivty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_new_button"
+        android:onClick="openCustomTransitionActivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="113dp"
+        android:text="Open Custom Transition Activty" />
+
 </RelativeLayout>
