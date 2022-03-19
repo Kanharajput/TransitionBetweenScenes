@@ -2,6 +2,7 @@ package com.example.autoanimatelayoutupdates;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.AutoTransition;
 import android.transition.ChangeBounds;
@@ -40,4 +41,10 @@ public class MainActivity extends AppCompatActivity {
         Transition autoTransition = new AutoTransition();
         TransitionManager.go(anotherScene, changeBound);
     }
+
+    public void openSecondActivity(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+    }
+
 }
